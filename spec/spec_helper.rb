@@ -1,6 +1,7 @@
 require 'dish'
 require 'order'
 require 'message'
+require 'takeaway'
 require 'twilio-ruby'
 
 RSpec.configure do |config|

@@ -1,7 +1,6 @@
-require_relative "message"
 
 class Order
-	
+
   def initialize
     @line_item = {}
   end
@@ -15,8 +14,8 @@ class Order
     @line_item
   end
 
-  def place_order(mytotal)
-  	mytotal != order_total ? raise("Total is not correct!") : SimpleMessage.new('+447817212078').simple_message 
+  def place_order(mytotal, myphone)
+    mytotal != order_total ? raise("Total is not correct!") : SimpleMessage.new(myphone).simple_message 
   end
 
   def order_total
