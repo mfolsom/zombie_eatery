@@ -7,7 +7,6 @@ describe Order do
   let(:twilio_client) {double :twilio_client}
 
   it "adds a line_item to an order" do
-  	# dish1 = Dish.new(:fresh_brains, 15)
     order.add_item(:fresh_brains, 15, 1)
     expect(order.line_item).to include(:fresh_brains)
   end
